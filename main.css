@@ -1,0 +1,60 @@
+.navbar-default {
+    background: #E1EFE0;
+    padding-bottom: 2%
+}
+
+.navbar-nav {
+    margin-top: -4%;
+    margin-right: 4%;
+}
+
+.btn-sm {
+    background: #E1EFE0;
+}
+
+#logo {
+    width: 15%;
+    margin-top: -2%;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+#geo {
+    width: 4%;
+}
+
+img {
+    width: 40px;
+}
+
+#tabs1 {
+    width: 40%;
+}
+
+#table1 {
+    width: 100%;
+}
+
+#imprime {
+    margin-left: 40%;
+}
+
+a {
+    color: #7DAB7A;
+}
+
+#L {
+    width: 35%;
+}
+
+#C {
+    width: 10%;
+}
+
+#S {
+    width: 15%;
+}
+
+#P {
+    width: 15%;
+}

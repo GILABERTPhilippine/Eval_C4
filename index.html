@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fais pas le poireau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" id="logo" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <a>
+                        <button type="button" id="caddy" class="btn btn-sm" data-toggle="modal" data-target="#myModal1">
+                            <img src="img/shopping-cart.png">
+                        </button>
+                    </a>
+                    <a>
+                        <button type="button" id="caddy" class="btn btn-sm" data-toggle="modal" data-target="#myModal2">
+                            <img src="img/plus-circle.png">
+                        </button>
+                    </a>
+                    <a>
+                        <button type="button" id="caddy" class="btn btn-sm" data-toggle="modal" data-target="#myModal3">
+                            <img src="img/minus-circle.png">
+                        </button>
+                    </a>
+                    <a>
+                        <button type="button" id="caddy" class="btn btn-sm" data-toggle="modal" data-target="#myModal4">
+                            <img src="img/print.png">
+                        </button>
+                    </a>
+                    <a>
+                        <button type="button" id="caddy" class="btn btn-sm" data-toggle="modal" data-target="#myModal5">
+                            <img src="img/map-marker-alt.png">
+                        </button>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="container" id="tabs1">
+
+        <ul class="nav nav-tabs">
+            <li>
+                <a data-toggle="tab" href="#tous">Tous</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#fruits">Fruits</a>
+            </li>
+            <li class="active">
+                <a data-toggle="tab" href="#légumes">Légumes</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="tous" class="tab-pane fade">
+                <h3>Tous</h3>
+            </div>
+            <div id="fruits" class="tab-pane fade">
+                <h3>Fruits</h3>
+            </div>
+            <div id="légumes" class="tab-pane fade in active">
+                <div class="container" id="table1">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Quantité au kg ou Unité</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ail</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Brocoli</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Chou de Bruxelle</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Comcombre</td>
+                                <td>6,3</td>
+                            </tr>
+                            <tr>
+                                <td>Cornichon</td>
+                                <td>10,6</td>
+                            </tr>
+                            <tr>
+                                <td>Epinard</td>
+                                <td>5,2</td>
+                            </tr>
+                            <tr>
+                                <td>Haricots</td>
+                                <td>12,4</td>
+                            </tr>
+                            <tr>
+                                <td>Mâche</td>
+                                <td>3,5</td>
+                            </tr>
+                            <tr>
+                                <td>Patate douce</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Pomme de terre</td>
+                                <td>120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Nouvelle vente</h4>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="heure">Heure</label>
+                            <input type="datetime" class="form-control" id="heure">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="sel1">Ville</label>
+                            <select class="form-control" id="sel1">
+                                <option>Pamiers city</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="quantite">Quantité</label>
+                        <input type="number" class="form-control" id="quantite">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantite">Quantité</label>
+                        <input type="number" class="form-control" id="quantite2">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantite">Quantité</label>
+                        <input type="number" class="form-control" id="quantite3">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Fruit/Légume</label>
+                        <select class="form-control" id="sel1">
+                            <option>Patates</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Fruit/Légume</label>
+                        <select class="form-control" id="sel1">
+                            <option>Tomates</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Fruit/Légume</label>
+                        <select class="form-control" id="sel1">
+                            <option>Salade</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ajouter un élément</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Valider la vente</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Nouvelle entrée dans le stock</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="heure">Quantité</label>
+                        <input type="number" class="form-control" id="quantite4">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Fruit/Légume</label>
+                        <select class="form-control" id="sel1">
+                            <option>Courgettes</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Quantité perdue/jetée</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="heure">Quantité</label>
+                        <input type="number" class="form-control" id="quantite4">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="sel1">Fruit/Légume</label>
+                        <select class="form-control" id="sel1">
+                            <option>Courgettes</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Valider la supression</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4-->
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Impression</h4>
+                    <h6>Information sur les sept derniers jours</h6>
+                    <button type="button" class="btn btn-success" id="imprime" data-dismiss="modal">Imprimer</button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th id="L">Légume</th>
+                                <th id="C">Cat.</th>
+                                <th id="S">Stock</th>
+                                <th id="P">Perdue</th>
+                                <th id="V">Vendue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banane</td>
+                                <td>F</td>
+                                <td>23</td>
+                                <td>3</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>Poire</td>
+                                <td>F</td>
+                                <td>13</td>
+                                <td>1</td>
+                                <td>22,4</td>
+                            </tr>
+                            <tr>
+                                <td>Pomme</td>
+                                <td>F</td>
+                                <td>15,3</td>
+                                <td>5</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Ail</td>
+                                <td>L</td>
+                                <td>30</td>
+                                <td>4,3</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Brocoli</td>
+                                <td>L</td>
+                                <td>20</td>
+                                <td>6</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td>Chou de Bruxelle</td>
+                                <td>L</td>
+                                <td>12</td>
+                                <td>20</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Comcombre</td>
+                                <td>L</td>
+                                <td>6,2</td>
+                                <td>2</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Cornichon</td>
+                                <td>L</td>
+                                <td>10,6</td>
+                                <td>3</td>
+                                <td>43</td>
+                            </tr>
+                            <tr>
+                                <td>Epinard</td>
+                                <td>L</td>
+                                <td>5,2</td>
+                                <td>1</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal 5-->
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Géomarketing</h4>
+                    <h6>5 communes les plus consommatrices</h6>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Ordre</th>
+                                <th>Ville</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Pamiers City</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Foix</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Saverdun</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Toulouse</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>St-Giron</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
